@@ -34,4 +34,5 @@ const totalRevenue =  function(objects) {
   return totalRevenue; 
 };
 
-const averageRevenue = 
+const averageRevenue = function(array) { 
+  return totalRevenue(array)
