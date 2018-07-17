@@ -32,11 +32,5 @@ function totalRevenue(driver) {
     totalRevenue += object.revenue; 
   });
   return totalRevenue; 
-};
+}
 
-function totalRevenue(driver) {
-+  const reduced = driver.reduce(function(a,b) {
-+    return {revenue: a.revenue + b.revenue};
-+  })
-+  return reduced.revenue;
-+}
