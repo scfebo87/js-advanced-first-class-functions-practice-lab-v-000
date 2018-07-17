@@ -26,4 +26,4 @@ function driversByName(array) {
   return sorted_array; 
 }
 
-function totalRevenue
+function totalRevenue()
