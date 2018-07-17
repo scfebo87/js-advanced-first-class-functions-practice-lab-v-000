@@ -33,3 +33,5 @@ const totalRevenue =  function(objects) {
   });
   return totalRevenue; 
 };
+
+const averageRevenue = 
