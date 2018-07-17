@@ -10,9 +10,10 @@ function logDriversByHometown(array, location) {
   });
 }
 
-function driversByRevenue(array) { 
-  array.sort(function(object1, object2) {
+function driversByRevenue(array) {
+  sorted_array = array.slice(0); 
+  sorted_array.sort(function(object1, object2) {
     return object1.revenue - object2.revenue;
   });
-  return array; 
+  return sorted_array; 
 }
