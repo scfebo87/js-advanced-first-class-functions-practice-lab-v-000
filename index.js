@@ -17,3 +17,5 @@ function driversByRevenue(array) {
   });
   return sorted_array; 
 }
+
+function driversByName
