@@ -33,3 +33,11 @@ const totalRevenue =  function(objects) {
   });
   return totalRevenue; 
 };
+
+const averageRevenue =  function(objects) { 
+  let totalRevenue = 0;
+  objects.forEach(function(object) { 
+    totalRevenue += object.revenue; 
+  });
+  return totalRevenue/
+};
