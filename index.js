@@ -26,7 +26,7 @@ function driversByName(array) {
   return sorted_array; 
 }
 
-const totalRevenue =  function(objects) { 
+function totalRevenue(driver) { 
   let totalRevenue = 0;
   objects.forEach(function(object) { 
     totalRevenue += object.revenue; 
@@ -34,10 +34,9 @@ const totalRevenue =  function(objects) {
   return totalRevenue; 
 };
 
-const averageRevenue =  function(objects) { 
-  let totalRevenue = 0;
-  objects.forEach(function(object) { 
-    totalRevenue += object.revenue; 
-  });
-  return totalRevenue/
-};
+function totalRevenue(driver) {
++  const reduced = driver.reduce(function(a,b) {
++    return {revenue: a.revenue + b.revenue};
++  })
++  return reduced.revenue;
++}
