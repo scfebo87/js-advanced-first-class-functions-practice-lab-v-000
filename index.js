@@ -26,4 +26,19 @@ function driversByName(array) {
   return sorted_array; 
 }
 
-function totalRevenue()
+function totalRevenue(objects) { 
+  
+
+
+const getTotalAmountForProducts = function (products) {
+  let totalPrice = 0;
+
+  products.forEach(function (product) {
+    totalPrice += product.price;
+  });
+
+  return totalPrice;
+};
+
+getTotalAmountForProducts(products);
+// => 33.46
