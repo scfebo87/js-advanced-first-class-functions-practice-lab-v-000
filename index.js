@@ -18,4 +18,8 @@ function driversByRevenue(array) {
   return sorted_array; 
 }
 
-function driversByName
+function driversByName(array) {
+  sorted_array = array.slice(0); 
+  sorted_array.sort(function(object1, object2) { 
+    return 
+}
