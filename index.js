@@ -21,5 +21,7 @@ function driversByRevenue(array) {
 function driversByName(array) {
   sorted_array = array.slice(0); 
   sorted_array.sort(function(object1, object2) { 
-    return 
+    return object1.name.localeCompare(object2.name);
+  });
+  return sorted_array; 
 }
