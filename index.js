@@ -26,13 +26,14 @@ function driversByName(array) {
   return sorted_array; 
 }
 
-const totalRevenue =  function(objects) { 
+const totalRevenue =  function(array) { 
   let totalRevenue = 0;
-  objects.forEach(function(object) { 
+  array.forEach(function(object) { 
     totalRevenue += object.revenue; 
   });
   return totalRevenue; 
 };
 
 const averageRevenue = function(array) { 
-  return totalRevenue(array)
+  return totalRevenue(array)/array.length;
+};
